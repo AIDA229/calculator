@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculator</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+<script type="text/javascript" src="main.js"></script>
+</head>
+<body>
+
+
+
+<script>
+	function calNumbers(result){
+		form.displayResult.value=form.displayResult.value+result;
+		
+	}
+	</script>
+	<div class="container">
+		<form name="form">
+		<div class="display">
+		<input type="text" placeholder="0" name="displayResult" />
+		</div>
+		<div class="buttons">
+	  <div class="row">
+		<input type="button" name="b7" value="7" onClick="calNumbers(b7.value)">
+	  <input type="button" name="b8" value="8" onClick="calNumbers(b8.value)">
+	  <input type="button" name="b9" value="9" onClick="calNumbers(b9.value)">
+	  <input type="button" name="addb" value="+" onClick="calNumbers(addb.value)">
+		</div>
+		
+		<div class="row">
+		<input type="button" name="b4" value="4" onClick="calNumbers(b4.value)">
+	  <input type="button" name="b5" value="5" onClick="calNumbers(b5.value)">
+	  <input type="button" name="b6" value="6" onClick="calNumbers(b6.value)">
+	  <input type="button" name="subb" value="-" onClick="calNumbers(subb.value)">
+		</div>
+		
+		<div class="row">
+		<input type="button" name="b1" value="1" onClick="calNumbers(b1.value)">
+	  <input type="button" name="b2" value="2" onClick="calNumbers(b2.value)">
+	  <input type="button" name="b3" value="3" onClick="calNumbers(b3.value)">
+	  <input type="button" name="mulb" value="*" onClick="calNumbers(mulb.value)">
+		</div>
+		
+		<div class="row">
+		<input type="button" name="b0" value="0" onClick="calNumbers(b0.value)">
+	  <input type="button" name="pot" value="." onClick="calNumbers(pot.value)">
+	  <input type="button" name="div" value="/" onClick="calNumbers(div.value)">
+	  <input type="button" class="red" value="=" onClick="displayResult.value=eval(displayResult.value)">
+		</div>
+		</div>
+		
+		</form>
+	</div>
+</body>
+</html>
